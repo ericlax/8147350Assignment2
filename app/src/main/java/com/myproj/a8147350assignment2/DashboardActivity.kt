@@ -22,6 +22,23 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
+        findViewById<android.widget.Button>(R.id.btnLogout)
+            .setOnClickListener {
+
+                val intent = Intent(
+                    this@DashboardActivity,
+                    MainActivity::class.java
+                )
+
+                intent.flags =
+                    Intent.FLAG_ACTIVITY_NEW_TASK or
+                            Intent.FLAG_ACTIVITY_CLEAR_TASK
+
+                startActivity(intent)
+                finish()
+            }
+
+
         val recyclerView =
             findViewById<RecyclerView>(R.id.recyclerView)
 
