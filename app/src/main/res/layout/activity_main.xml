@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -9,81 +10,115 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:padding="28dp">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NIT3213"
-            android:textColor="#48DCCB"
-            android:textSize="36sp"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:gravity="center" />
+            android:letterSpacing="0.2"
+            android:textColor="#48DCCB"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Student Login"
+            android:layout_marginTop="36dp"
+            android:text="Welcome back."
             android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:layout_marginTop="12dp" />
+            android:textStyle="bold"
+            android:textSize="36sp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign in to access your dashboard"
+            android:layout_marginTop="10dp"
+            android:text="Sign in to explore your digital library."
             android:textColor="#A9B3C3"
-            android:textSize="14sp"
-            android:gravity="center"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="36dp" />
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="STUDENT ID"
+            android:textColor="#D3DCE8"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:letterSpacing="0.12"/>
 
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:hint="Student ID"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="Enter your student ID"
             android:inputType="number"
             android:singleLine="true"
-            android:padding="16dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
             android:textColor="#FFFFFF"
-            android:textColorHint="#A9B3C3"
-            android:backgroundTint="#48DCCB" />
+            android:textColorHint="#8291A5"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="FIRST NAME"
+            android:textColor="#D3DCE8"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:letterSpacing="0.12"/>
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:hint="First Name"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="Enter your first name"
             android:inputType="textPassword"
             android:singleLine="true"
-            android:padding="16dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
             android:textColor="#FFFFFF"
-            android:textColorHint="#A9B3C3"
-            android:backgroundTint="#48DCCB"
-            android:layout_marginTop="18dp" />
+            android:textColorHint="#8291A5"
+            android:textSize="15sp"/>
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="LOGIN"
-            android:textColor="#101827"
+            android:layout_height="60dp"
+            android:layout_marginTop="34dp"
+            android:text="SIGN IN"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:backgroundTint="#48DCCB"
-            android:layout_marginTop="30dp" />
+            android:textColor="#101827"
+            android:backgroundTint="#48DCCB"/>
 
         <TextView
             android:id="@+id/tvError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
             android:textColor="#FF8080"
             android:textSize="14sp"
             android:gravity="center"
-            android:layout_marginTop="16dp"
-            android:visibility="gone" />
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="VICTORIA UNIVERSITY  •  ANDROID APPLICATION"
+            android:textColor="#78879B"
+            android:textSize="10sp"
+            android:letterSpacing="0.08"
+            android:gravity="center"/>
 
     </LinearLayout>
 </ScrollView>

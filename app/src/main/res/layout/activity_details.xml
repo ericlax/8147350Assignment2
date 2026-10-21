@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="#101827">
 
     <LinearLayout
@@ -14,18 +15,66 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Entity Details"
-            android:textSize="28sp"
+            android:text="LIBRARY / BOOK DETAILS"
+            android:textSize="12sp"
             android:textStyle="bold"
-            android:textColor="#48DCCB"
-            android:layout_marginBottom="24dp"/>
+            android:letterSpacing="0.15"
+            android:textColor="#48DCCB"/>
 
         <TextView
-            android:id="@+id/tvDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
+            android:layout_marginTop="16dp"
+            android:text="Book details"
+            android:textSize="34sp"
+            android:textStyle="bold"
             android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Everything you need to know about this title."
+            android:textSize="15sp"
+            android:textColor="#A9B3C3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BOOK INFORMATION"
+                android:textColor="#48DCCB"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"
+                android:layout_marginBottom="22dp"/>
+
+            <TextView
+                android:id="@+id/tvDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:lineSpacingExtra="7dp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="NIT3213 DIGITAL LIBRARY"
+            android:textColor="#78879B"
+            android:textSize="11sp"
+            android:letterSpacing="0.12"
+            android:gravity="center"/>
 
     </LinearLayout>
 </ScrollView>
