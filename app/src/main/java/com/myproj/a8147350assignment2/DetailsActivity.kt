@@ -10,6 +10,10 @@ class DetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
+        findViewById<TextView>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+
 
         val tvDetails =
             findViewById<TextView>(R.id.tvDetails)
